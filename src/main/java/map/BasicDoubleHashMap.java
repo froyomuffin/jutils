@@ -7,8 +7,10 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.HashMap;
 
+import java.io.Serializable;
+
 // TODO: Java 8
-public class BasicDoubleHashMap<K, V> implements DoubleHashMap<K, V> {
+public class BasicDoubleHashMap<K, V> implements DoubleHashMap<K, V>, Serializable {
     private Map<V, K> reverseMap;
     private Map<K, V> forwardMap;
 
